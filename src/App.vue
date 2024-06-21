@@ -13,7 +13,15 @@ onHide(() => {
 </script>
 
 <style lang="scss">
+@import 'uview-plus/index';
 /* stylelint-disable selector-type-no-unknown */
+uni-page-body,
+page,
+body,
+html {
+  height: 100%;
+}
+
 button::after {
   border: none;
 }

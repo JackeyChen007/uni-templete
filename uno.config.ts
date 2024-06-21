@@ -10,7 +10,7 @@ import {
 } from 'unocss'
 
 import { presetApplet, presetRemRpx, transformerAttributify } from 'unocss-applet'
-
+import presetRemToPx from '@unocss/preset-rem-to-px'
 // @see https://unocss.dev/presets/legacy-compat
 // import { presetLegacyCompat } from '@unocss/preset-legacy-compat'
 
@@ -26,6 +26,10 @@ if (isMp) {
     presetUno(),
     // 支持css class属性化
     presetAttributify(),
+    // rem转px 但是失去了响应式
+    // presetRemToPx({
+    //   baseFontSize: 4,
+    // }),
   )
 }
 export default defineConfig({

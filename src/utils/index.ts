@@ -1,4 +1,3 @@
-// @ts-expect-error import json file
 import { pages, subPackages, tabBar } from '@/pages.json'
 
 /** 判断当前页面是否是tabbar页  */
@@ -91,7 +90,7 @@ export const getAllPages = (key = 'needLogin') => {
       })
   })
   const result = [...mainPages, ...subPages]
-  console.log(`getAllPages by ${key} result: `, result)
+  // console.log(`getAllPages by ${key} result: `, result)
   return result
 }
 
